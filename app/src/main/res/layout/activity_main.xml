@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <!-- Main Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_buttons_title"
+                android:textColor="@color/body_text_1"
+                android:textSize="@dimen/buttons_title_text_size" />
+
+            <LinearLayout
+                android:id="@+id/button_container"
+                android:layout_width="@dimen/button_container_width"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_spotify_streamer"
+                    style="@style/AppButton"
+                    android:contentDescription="@string/btn_spotify_streamer_description"
+                    android:text="@string/btn_spotify_streamer" />
+
+                <Button
+                    android:id="@+id/btn_scores"
+                    style="@style/AppButton"
+                    android:contentDescription="@string/btn_scores_description"
+                    android:text="@string/btn_scores" />
+
+                <Button
+                    android:id="@+id/btn_library"
+                    style="@style/AppButton"
+                    android:contentDescription="@string/btn_library_description"
+                    android:text="@string/btn_library" />
+
+                <Button
+                    android:id="@+id/btn_build_it_bigger"
+                    style="@style/AppButton"
+                    android:contentDescription="@string/btn_build_it_bigger_description"
+                    android:text="@string/btn_build_it_bigger" />
+
+                <Button
+                    android:id="@+id/btn_xyz_reader"
+                    style="@style/AppButton"
+                    android:contentDescription="@string/btn_xyz_reader_description"
+                    android:text="@string/btn_xyz_reader" />
+
+                <Button
+                    android:id="@+id/btn_capstone"
+                    style="@style/AppButton.CapstoneButton"
+                    android:contentDescription="@string/btn_capstone_description"
+                    android:text="@string/btn_capstone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
